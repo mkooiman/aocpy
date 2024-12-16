@@ -21,7 +21,7 @@ def horizontal (grid, word):
 
 def vertical (grid, word):
     reversedWord = word[::-1]
-    result = 0;
+    result = 0
     for column in grid.T:
         result += ''.join(column).count(word)
         result += ''.join(column).count(reversedWord)
